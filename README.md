@@ -4,12 +4,12 @@
 
 （用于录像/直播高能时刻/网课笔记等，方便快速定位/后期切片。）
 
-1年前写的项目，OBS在2024.07推出30.2版本后，内置了Hybrid MP4的chapter标记，实现了部分功能。不过一些需求仍未实现（自定义标签内容、输出非内嵌文件），github上其它项目也不符合需求，操作比较繁琐。
-
 ## 使用方法
+安装[Python](https://www.python.org/downloads/)
+
 工具-脚本-Python设置，添加Python路径
 
-工具-脚本-脚本-脚本-+号，添加.py/.lua脚本文件（.lua不需要安装Python）
+工具-脚本-脚本-+号，添加OBS_Time_Marker.py脚本文件
 
 ### 选项
 - 输出文件夹：时间点标记文件的输出路径
@@ -30,3 +30,8 @@
 [derrod/obs-named-chapter-hotkeys](https://github.com/derrod/obs-named-chapter-hotkeys)
 
 [StreamUPTips/obs-chapter-marker-manager](https://github.com/StreamUPTips/obs-chapter-marker-manager)
+
+## 碎碎念
+1年前写的项目，方便录视频用。OBS在2024.07推出30.2版本后，内置了Hybrid MP4的chapter标记，实现了部分功能。不过一些需求仍未实现（自定义标签内容、输出非内嵌文件），github上其它项目也不符合需求，操作比较繁琐。
+
+tools里面是我常用的2个工具，时间点标记txt转pbf 与 无损切割视频（复制流），由于是无损切割，所以会从切割点自动向前选择最近的I帧，可能不是很准确，需要手动预留空间。
